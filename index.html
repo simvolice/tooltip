@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Tooltip</title>
+
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/angular-material.min.css">
+</head>
+
+
+<body ng-controller="MainCtrl" ng-cloak>
+
+
+
+<div class="container">
+
+
+    <button>
+        ToolTip без задержки
+        <md-tooltip>
+            Hi, I'm a tooltip
+        </md-tooltip>
+    </button>
+
+    <md-input-container>
+        <label>Укажите задержку для ToolTip's</label>
+        <input ng-model="demo.delayTooltip">
+    </md-input-container>
+
+    <button>
+        ToolTip с задержкой
+        <md-tooltip md-delay="demo.delayTooltip">
+            Hi, I'm a tooltip with delay
+        </md-tooltip>
+    </button>
+
+
+
+
+
+</div>
+
+
+
+<script src="assets/js/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+<script src="assets/js/angular-material.min.js"></script>
+
+
+
+<script src="app/app.routes.js"></script>
+<script src="app/app.module.js"></script>
+
+
+</body>
+</html>
